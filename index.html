@@ -1,58 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Milan Sebes</title>
+    <meta name="author" content="Milano Sebes">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
         <div class="container">
-            <h1>Milan Sebes</h1>
+            <h1>Welkom op mijn Portfolio!</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">Over Mij</a></li>
-                    <li><a href="#projects">Projecten</a></li>
+                    <li><a href="#over-mij">Over Mij</a></li>
+                    <li><a href="#projecten">Projecten</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main>
-        <section id="about">
-            <h2>Over Mij</h2>
-            <p>Ik ben Milan, een 19-jarige student Software Developer. Hier deel ik mijn projecten en interesses.</p>
-        </section>
-        <section id="projects">
-            <h2>Projecten</h2>
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Beschrijving van het project.</p>
-                <a href="#" target="_blank">Bekijk project</a>
+        <!-- Over Mij -->
+        <h1 id="over-mij">Over Mij</h1>
+        <div class="container">
+            <div class="about-me">
+                <img src="foto.jpg" alt="Foto van Milan Sebes" class="profile-photo">
+                <p>Hallo! Ik ben Milan Sebes, een enthousiaste software developer. Ik werk aan diverse projecten die variëren van webapplicaties tot gameontwikkeling. Ik hou van het creëren van praktische en innovatieve oplossingen en leer altijd nieuwe technologieën en vaardigheden.</p>
             </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Beschrijving van het project.</p>
-                <a href="#" target="_blank">Bekijk project</a>
+        </div>
+
+        <!-- Projecten -->
+        <h1 id="projecten">Projecten</h1>
+        <div class="container">
+            <div class="projects">
+                <div class="project-card">
+                    <h2>Jukebox Applicatie</h2>
+                    <p>Een project waar gebruikers hun favoriete muziek kunnen opzoeken, afspeellijsten kunnen maken en muziek kunnen afspelen. Het maakt gebruik van een mooie interface en verschillende API's voor muziekdata.</p>
+                    <a href="https://github.com/MilanoGamezzYT/De-Basics-of-Back-end/tree/main/Back-End-introductie/Opdrachten/MPA/Milan" target="_blank">Bekijk op GitHub</a>
+                </div>
+                <!-- Voeg hier meer projecten toe -->
             </div>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form id="contactForm">
+        </div>
+
+        <!-- Contact -->
+        <h1 id="contact">Contact</h1>
+        <div class="container">
+            <form action="mailto:milansebes12@gmail.com" method="post" enctype="text/plain">
                 <label for="name">Naam:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Bericht:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Bericht:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
                 <button type="submit">Verstuur</button>
             </form>
-        </section>
+        </div>
     </main>
+
     <footer>
-        <p>&copy; 2025 Milan Sebes</p>
+        <div class="container">
+            <p>&copy; 2025 Milan Sebes. Alle rechten voorbehouden.</p>
+        </div>
     </footer>
-    <script src="scripts.js"></script>
+
 </body>
 </html>
