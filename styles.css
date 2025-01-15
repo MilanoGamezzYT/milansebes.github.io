@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: black;
+    color: #333; /* Veranderd naar een meer leesbare kleur voor tekst */
     text-align: center;
 }
 
@@ -19,9 +19,15 @@ header {
     padding: 1rem 0;
 }
 
+header h1 {
+    color: #fff;
+    margin: 0; /* Toegevoegd om ruimte te besparen */
+}
+
 header ul {
     list-style: none;
     padding: 0;
+    margin: 0; /* Toegevoegd voor consistentie */
 }
 
 header li {
@@ -38,17 +44,21 @@ header a:hover {
     text-decoration: underline;
 }
 
-header h1 {
-    color: #fff;
-}
-
 main {
     padding: 2rem 0;
 }
 
 h1 {
     margin-bottom: 2rem;
+    color: #333; /* Kleur is al goed, maar consistent gehouden */
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    margin-bottom: 1rem;
     color: #333;
+    padding-bottom: 5px;
 }
 
 .about-me {
@@ -64,14 +74,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-h2 {
-    border-bottom: 2px solid #333;
-    display: inline-block;
-    margin-bottom: 1rem;
-    color: #333;
-    padding-bottom: 5px;
-}
-
 .project-card {
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -79,9 +81,8 @@ h2 {
     margin-bottom: 1rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
-    display: block;  
-    width: 100%; 
-    margin: 1rem 0; 
+    display: block;
+    width: 100%;
 }
 
 .project-card h3 {
@@ -136,4 +137,14 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+}
+
+/* Extra styling voor meer visuele consistentie */
+a {
+    color: inherit; /* Zorgt ervoor dat links de kleur van de omringende tekst overnemen */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
