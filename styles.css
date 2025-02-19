@@ -148,3 +148,17 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.skills {
+    text-align: center; /* Centreert de tekst in de sectie */
+}
+
+.skills-list {
+    list-style: none; /* Verwijdert de standaard stippen */
+    padding: 0; /* Verwijdert standaard padding */
+    margin: 20px 0; /* Voegt ruimte boven en onder de lijst toe */
+}
+
+.skills-list li {
+    margin: 10px 0; /* Voegt ruimte tussen de lijstitems toe */
+}
